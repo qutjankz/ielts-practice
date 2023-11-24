@@ -23,4 +23,7 @@ public class WritingPracticeResponse {
 
     @Column(name = "answer_text", nullable = false, columnDefinition = "TEXT")
     private String answerText;
+
+    @Column(name = "question_id", nullable = false)
+    private Long questionId;
 }

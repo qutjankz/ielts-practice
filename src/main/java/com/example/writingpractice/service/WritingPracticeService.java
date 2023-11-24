@@ -8,5 +8,7 @@ public interface WritingPracticeService {
 
     WritingPracticeQuestion getWritingPracticeQuestion();
 
-    void saveResponse(String clientName, String answerText);
+    WritingPracticeQuestion getWritingPracticeQuestionByTaskNumber(int taskNumber);
+
+    void saveResponse(String clientName, String answerText, Long questionId);
 }

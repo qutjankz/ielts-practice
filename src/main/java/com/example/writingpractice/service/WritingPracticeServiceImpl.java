@@ -35,10 +35,16 @@ public class WritingPracticeServiceImpl implements WritingPracticeService {
     }
 
     @Override
-    public void saveResponse(String clientName, String answerText) {
+    public WritingPracticeQuestion getWritingPracticeQuestionByTaskNumber(int taskNumber) {
+        return questionRepository.findRandomQuestionByTaskNumber(taskNumber);
+    }
+
+    @Override
+    public void saveResponse(String clientName, String answerText, Long questionId) {
         WritingPracticeResponse response = new WritingPracticeResponse();
         response.setClientName(clientName);
         response.setAnswerText(answerText);
+        response.setQuestionId(questionId);
         responseRepository.save(response);
     }
 }

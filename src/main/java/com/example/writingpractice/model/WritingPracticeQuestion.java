@@ -11,7 +11,7 @@ import jakarta.persistence.*;
 @Table(name = "writing_practice_question")
 @Getter
 @Setter
-public class WritingPracticeQuestionTaskOne {
+public class WritingPracticeQuestion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,4 +23,7 @@ public class WritingPracticeQuestionTaskOne {
 
     @Column(name = "picture_url")
     private String pictureUrl;
+
+    @Column(name = "task_number")
+    private int taskNumber;
 }

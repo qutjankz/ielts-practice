@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/practice/writing")
+@RequestMapping("/writing")
 public class WritingPracticeController {
 
     private final WritingPracticeService writingPracticeService;
@@ -23,19 +23,18 @@ public class WritingPracticeController {
     public WritingPracticeQuestion getWritingPracticeQuestion() {
         return writingPracticeService.getWritingPracticeQuestion();
     }
-
+    @GetMapping("/question/{taskNumber}")
+    public WritingPracticeQuestion getWritingPracticeQuestionByTaskNumber(@PathVariable int taskNumber) {
+        return writingPracticeService.getWritingPracticeQuestionByTaskNumber(taskNumber);
+    }
     @PostMapping("/response")
     public void saveResponse(@RequestBody SaveResponseRequest request) {
-        if (request.getClientName() == null || request.getAnswerText() == null) {
-            // Handle the case where either clientName or answerText is null
-            throw new IllegalArgumentException("clientName and answerText must not be null");
-        }
-
-        writingPracticeService.saveResponse(request.getClientName(), request.getAnswerText());
+        writingPracticeService.saveResponse(request.getClientName(), request.getAnswerText(), request.getQuestionId());
     }
     @Data
     static class SaveResponseRequest {
         private String clientName;
         private String answerText;
+        private Long questionId;
     }
 }
