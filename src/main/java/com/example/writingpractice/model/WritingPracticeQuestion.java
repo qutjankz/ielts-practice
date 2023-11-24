@@ -11,11 +11,12 @@ import jakarta.persistence.*;
 @Table(name = "writing_practice_question")
 @Getter
 @Setter
-public class WritingPracticeQuestion {
+public class WritingPracticeQuestionTaskOne {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    //private Long id;
+
+    private Long id;
 
     @Column(name = "question_text")
     private String questionText;
