@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: jakarta.batch:jakarta.batch-api:2.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.batch/jakarta.batch-api/2.1.1/dfd728f3fc2f086484410ba2e5d06a26a371ed1d/jakarta.batch-api-2.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.batch/jakarta.batch-api/2.1.1/de2e96190f164c62298cf765a6458c49e86860d6/jakarta.batch-api-2.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
