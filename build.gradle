@@ -31,6 +31,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security:3.0.4'
 	implementation 'jakarta.platform:jakarta.jakartaee-api:10.0.0'
 	implementation 'com.github.nickhnsn.facharbeit-spaced-repetition:spaced-repetition-api:v1.0.0'
+	implementation 'org.glassfish.jersey.core:jersey-client:2.29'
+	implementation 'org.telegram:telegrambots:4.9'
+
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'

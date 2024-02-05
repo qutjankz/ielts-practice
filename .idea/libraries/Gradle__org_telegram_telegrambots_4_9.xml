@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.telegram:telegrambots:4.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots/4.9/ef35263c2160571143c72883fadf1c8bc3097b9e/telegrambots-4.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.telegram/telegrambots/4.9/59cac357a8dc0a4c412915fee3c7861c6c486316/telegrambots-4.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
